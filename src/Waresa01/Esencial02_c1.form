@@ -256,7 +256,7 @@
               <SubComponents>
                 <Component class="javax.swing.JLabel" name="lbl_nombre_c1">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Seleccione en cada aspecto"/>
+                    <Property name="text" type="java.lang.String" value="Seleccione en cada aspecto:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lbl_nombre_c2">
