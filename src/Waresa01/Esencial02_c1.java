@@ -1,6 +1,7 @@
 package Waresa01;
 
 import java.awt.Image;
+import java.text.DecimalFormat;
 import javax.swing.*;
 
 /**
@@ -9,7 +10,8 @@ import javax.swing.*;
  */
 public class Esencial02_c1 extends javax.swing.JFrame {
     ImageIcon foto1, foto2, foto3, foto4, foto5, foto6;
-
+    double caudal = 0.20;
+    double profundidadMayor = 0;
     /**
      * Creates new form Principal01
      */
@@ -33,8 +35,38 @@ public class Esencial02_c1 extends javax.swing.JFrame {
         foto6=new ImageIcon(getClass().getResource("/WaresaRecursos/Cyperaceae.jpg"));
         lbl_imagen_c6.setIcon(new ImageIcon(foto6.getImage().getScaledInstance(lbl_imagen_c6.getWidth(),lbl_imagen_c6.getHeight(),Image.SCALE_DEFAULT)));
 
+        lbl_resultadoCaudal.setText(String.valueOf(caudal));
+
     }
 
+    void verificarProfundidad(){
+        //Poaceae         1
+        if (cbx_imagen_c1.isSelected()){
+            profundidadMayor = 1;
+        }//Cyperaceae     0.8
+        else if (cbx_imagen_c3.isSelected()){
+            profundidadMayor = 0.8;
+        }        //Typhaceae     0.4
+        else if (cbx_imagen_c2.isSelected()){
+            profundidadMayor = 0.4;
+        }        //Canaceae     0.2
+        else if (cbx_imagen_c5.isSelected()){
+            profundidadMayor = 0.2;
+        }//Araceae  y     Iridaceae   0.15
+        else if (cbx_imagen_c4.isSelected() || cbx_imagen_c6.isSelected()){
+            profundidadMayor = 0.15;
+        }
+        else{
+            profundidadMayor = 0;
+        }
+
+        lbl_resultadoProfundidad.setText(String.valueOf(profundidadMayor));
+
+        if (profundidadMayor == 0){
+            lbl_resultadoProfundidad.setText("Por favor seleccione una opción de vegetación");
+
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -190,6 +222,11 @@ public class Esencial02_c1 extends javax.swing.JFrame {
         lbl_imagen_c3.setText("1");
 
         cbx_imagen_c1.setText("Poaceae");
+        cbx_imagen_c1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbx_imagen_c1ActionPerformed(evt);
+            }
+        });
 
         cbx_imagen_c2.setText("Typhaceae");
         cbx_imagen_c2.addActionListener(new java.awt.event.ActionListener() {
@@ -199,6 +236,11 @@ public class Esencial02_c1 extends javax.swing.JFrame {
         });
 
         cbx_imagen_c3.setText("Cyperaceae ");
+        cbx_imagen_c3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbx_imagen_c3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_imagenes1Layout = new javax.swing.GroupLayout(pnl_imagenes1);
         pnl_imagenes1.setLayout(pnl_imagenes1Layout);
@@ -245,6 +287,11 @@ public class Esencial02_c1 extends javax.swing.JFrame {
         lbl_imagen_c6.setText("1");
 
         cbx_imagen_c4.setText("Araceae");
+        cbx_imagen_c4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbx_imagen_c4ActionPerformed(evt);
+            }
+        });
 
         cbx_imagen_c5.setText("Canaceae");
         cbx_imagen_c5.addActionListener(new java.awt.event.ActionListener() {
@@ -253,7 +300,12 @@ public class Esencial02_c1 extends javax.swing.JFrame {
             }
         });
 
-        cbx_imagen_c6.setText("Iridaceae");
+        cbx_imagen_c6.setText("Iridaceae ");
+        cbx_imagen_c6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbx_imagen_c6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_imagenes2Layout = new javax.swing.GroupLayout(pnl_imagenes2);
         pnl_imagenes2.setLayout(pnl_imagenes2Layout);
@@ -406,9 +458,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
         lbl_nombre_d5.setText("Largo (m)");
 
-        lbl_resultadoCaudal.setText("jLabel1");
-
-        lbl_resultadoProfundidad.setText("jLabel1");
+        lbl_resultadoProfundidad.setText("Por favor seleccione una opción de vegetación");
 
         lbl_resultadoAreaSuperf.setText("jLabel1");
 
@@ -428,7 +478,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                     .addGroup(pnl_derechoLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbl_nombre_d, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                            .addComponent(lbl_nombre_d, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lbl_resultadoCaudal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lbl_resultadoProfundidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lbl_resultadoAreaSuperf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -439,7 +489,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                         .addComponent(lbl_nombre_d2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                .addGap(0, 33, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
                         .addComponent(lbl_nombre_d3)
@@ -519,18 +569,16 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
         Esencial01 e1 = new Esencial01();
-        dispose();
+        this.dispose();
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void cbx_personasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_personasActionPerformed
 
-       // oper=cbx_personas.getSelectedItem().toString();
+       //oper=cbx_personas.getSelectedItem().toString();
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
 
-
-
-
-
-
+        caudal = Double.parseDouble(cbx_personas.getSelectedItem().toString()) * 0.2  ;
+        lbl_resultadoCaudal.setText(decimalFormat.format(caudal));
 
     }//GEN-LAST:event_cbx_personasActionPerformed
 
@@ -543,16 +591,44 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     }//GEN-LAST:event_rbn_material_1ActionPerformed
 
     private void cbx_imagen_c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c2ActionPerformed
-        // TODO add your handling code here:
+        //Typhaceae     0.4
+        verificarProfundidad();
     }//GEN-LAST:event_cbx_imagen_c2ActionPerformed
 
     private void cbx_imagen_c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c5ActionPerformed
-        // TODO add your handling code here:
+        //Iridaceae   0.15
+        verificarProfundidad();
+
     }//GEN-LAST:event_cbx_imagen_c5ActionPerformed
 
     private void rbn_material_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbn_material_3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rbn_material_3ActionPerformed
+
+    private void cbx_imagen_c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c1ActionPerformed
+        //Poaceae         1
+        verificarProfundidad();
+
+
+    }//GEN-LAST:event_cbx_imagen_c1ActionPerformed
+
+    private void cbx_imagen_c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c3ActionPerformed
+        //Cyperaceae     0.8
+        verificarProfundidad();
+
+    }//GEN-LAST:event_cbx_imagen_c3ActionPerformed
+
+    private void cbx_imagen_c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c4ActionPerformed
+     //Araceae             0.15
+
+        verificarProfundidad();
+    }//GEN-LAST:event_cbx_imagen_c4ActionPerformed
+
+    private void cbx_imagen_c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_imagen_c6ActionPerformed
+        //Canaceae     0.2
+        verificarProfundidad();
+
+    }//GEN-LAST:event_cbx_imagen_c6ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -396,6 +396,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Poaceae"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c1ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c2">
                       <Properties>
@@ -409,6 +412,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Cyperaceae "/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c3ActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -482,6 +488,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Araceae"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c4ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c5">
                       <Properties>
@@ -493,8 +502,11 @@
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c6">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Iridaceae"/>
+                        <Property name="text" type="java.lang.String" value="Iridaceae "/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c6ActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -551,7 +563,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lbl_nombre_d" pref="184" max="32767" attributes="0"/>
+                                  <Component id="lbl_nombre_d" max="32767" attributes="0"/>
                                   <Component id="lbl_resultadoCaudal" max="32767" attributes="0"/>
                                   <Component id="lbl_resultadoProfundidad" alignment="0" max="32767" attributes="0"/>
                                   <Component id="lbl_resultadoAreaSuperf" alignment="0" max="32767" attributes="0"/>
@@ -567,7 +579,7 @@
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="33" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="lbl_nombre_d3" min="-2" max="-2" attributes="0"/>
@@ -647,13 +659,10 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lbl_resultadoCaudal">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lbl_resultadoProfundidad">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
+                <Property name="text" type="java.lang.String" value="Por favor seleccione una opci&#xf3;n de vegetaci&#xf3;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lbl_resultadoAreaSuperf">

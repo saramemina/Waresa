@@ -6,6 +6,8 @@
 package Waresa01;
 
 import javax.swing.*;
+import java.awt.*;
+import java.io.File;
 
 /**
  *
@@ -23,6 +25,15 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         initComponents();
     }
 
+    void openpdf(){
+
+        try {
+            Desktop leer = Desktop.getDesktop();
+            leer.open(new File("WaresaRecursos/Corporaciones_Autnomas_Regionales_Nacionales.pdf"));
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,"No se pudo leer el archvo pdf :(");
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -78,9 +89,9 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         pnl_izquierdoLayout.setHorizontalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(btn_home)
-                .addGap(0, 72, Short.MAX_VALUE))
+                .addGap(49, 49, 49)
+                .addComponent(lbl_nombre_i)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -96,7 +107,7 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap(124, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(lbl_nombre_i)
                 .addGap(46, 46, 46)
                 .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -205,14 +216,14 @@ public class Esencial02_i2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void btn_leerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_leerActionPerformed
-        // TODO add your handling code here:
-        
-        
-        
-        
-        
-        
-        
+        openpdf();
+
+
+
+
+
+
+
     }//GEN-LAST:event_btn_leerActionPerformed
 
     /**
