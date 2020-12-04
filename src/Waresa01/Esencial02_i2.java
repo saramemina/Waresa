@@ -37,6 +37,7 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         lbl_nombre_i = new javax.swing.JLabel();
         txa_descripcion_i = new javax.swing.JTextArea();
         btn_home = new javax.swing.JButton();
+        btn_leer = new javax.swing.JButton();
         pnl_derecho = new javax.swing.JPanel();
         lbl_nombre_d = new javax.swing.JLabel();
         txa_descripcion_d = new javax.swing.JTextArea();
@@ -65,6 +66,13 @@ public class Esencial02_i2 extends javax.swing.JFrame {
             }
         });
 
+        btn_leer.setText("Leer Documento");
+        btn_leer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_leerActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_izquierdoLayout = new javax.swing.GroupLayout(pnl_izquierdo);
         pnl_izquierdo.setLayout(pnl_izquierdoLayout);
         pnl_izquierdoLayout.setHorizontalGroup(
@@ -77,11 +85,13 @@ public class Esencial02_i2 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                        .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
                         .addComponent(lbl_nombre_i)
-                        .addGap(45, 45, 45))))
+                        .addGap(45, 45, 45))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
+                        .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btn_leer, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18))))
         );
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,7 +100,9 @@ public class Esencial02_i2 extends javax.swing.JFrame {
                 .addComponent(lbl_nombre_i)
                 .addGap(46, 46, 46)
                 .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(128, 128, 128)
+                .addGap(43, 43, 43)
+                .addComponent(btn_leer)
+                .addGap(54, 54, 54)
                 .addComponent(btn_home)
                 .addGap(16, 16, 16))
         );
@@ -192,6 +204,17 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_homeActionPerformed
 
+    private void btn_leerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_leerActionPerformed
+        // TODO add your handling code here:
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_btn_leerActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -292,6 +315,7 @@ public class Esencial02_i2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_home;
+    private javax.swing.JButton btn_leer;
     private javax.swing.JLabel lbl_nombre_d;
     private javax.swing.JLabel lbl_nombre_d1;
     private javax.swing.JLabel lbl_nombre_i;

@@ -44,6 +44,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         pnl_base = new javax.swing.JPanel();
         pnl_izquierdo = new javax.swing.JPanel();
         lbl_icono_i = new javax.swing.JLabel();
@@ -190,14 +191,14 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
         cbx_imagen_c1.setText("Poaceae");
 
-        cbx_imagen_c2.setText("Neotropical Typhaceae");
+        cbx_imagen_c2.setText("Typhaceae");
         cbx_imagen_c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbx_imagen_c2ActionPerformed(evt);
             }
         });
 
-        cbx_imagen_c3.setText("Cyperus papyrus");
+        cbx_imagen_c3.setText("Cyperaceae ");
 
         javax.swing.GroupLayout pnl_imagenes1Layout = new javax.swing.GroupLayout(pnl_imagenes1);
         pnl_imagenes1.setLayout(pnl_imagenes1Layout);
@@ -229,7 +230,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                     .addComponent(lbl_imagen_c1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_imagen_c2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbl_imagen_c3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(pnl_imagenes1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbx_imagen_c1)
                     .addComponent(cbx_imagen_c2)
@@ -252,7 +253,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
             }
         });
 
-        cbx_imagen_c6.setText("Cyperaceae");
+        cbx_imagen_c6.setText("Iridaceae");
 
         javax.swing.GroupLayout pnl_imagenes2Layout = new javax.swing.GroupLayout(pnl_imagenes2);
         pnl_imagenes2.setLayout(pnl_imagenes2Layout);
@@ -292,16 +293,19 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        rbn_material_1.setText("jRadioButton3");
+        buttonGroup1.add(rbn_material_1);
+        rbn_material_1.setText("Arena Gruesa");
         rbn_material_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbn_material_1ActionPerformed(evt);
             }
         });
 
-        rbn_material_2.setText("jRadioButton1");
+        buttonGroup1.add(rbn_material_2);
+        rbn_material_2.setText("Arena Gravosa");
 
-        rbn_material_3.setText("jRadioButton2");
+        buttonGroup1.add(rbn_material_3);
+        rbn_material_3.setText("Grava Fina");
         rbn_material_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rbn_material_3ActionPerformed(evt);
@@ -352,7 +356,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                     .addGroup(pnl_centroLayout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addComponent(lbl_nombre_c3_2)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_centroLayout.setVerticalGroup(
             pnl_centroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -714,6 +718,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_home;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JCheckBox cbx_imagen_c1;
     private javax.swing.JCheckBox cbx_imagen_c2;
     private javax.swing.JCheckBox cbx_imagen_c3;
