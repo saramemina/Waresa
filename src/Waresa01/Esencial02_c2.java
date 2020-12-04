@@ -109,6 +109,7 @@ public class Esencial02_c2 extends javax.swing.JFrame {
         btn_adelante = new javax.swing.JButton();
         btn_primera = new javax.swing.JButton();
         pnl_derecho = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
         txa_descripcion_d = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -235,28 +236,28 @@ public class Esencial02_c2 extends javax.swing.JFrame {
                 .addGap(9, 9, 9))
         );
 
-        txa_descripcion_d.setEditable(false);
         txa_descripcion_d.setColumns(20);
         txa_descripcion_d.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         txa_descripcion_d.setLineWrap(true);
         txa_descripcion_d.setRows(5);
-        txa_descripcion_d.setText("Ilustraremos mediante imágenes el proceso de construcción del humedal artificial.\n");
+        txa_descripcion_d.setText("1. Ilustraremos mediante imágenes el proceso de construcción del humedal artificial.");
         txa_descripcion_d.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(txa_descripcion_d);
 
         javax.swing.GroupLayout pnl_derechoLayout = new javax.swing.GroupLayout(pnl_derecho);
         pnl_derecho.setLayout(pnl_derechoLayout);
         pnl_derechoLayout.setHorizontalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
-                .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         pnl_derechoLayout.setVerticalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -401,6 +402,7 @@ public class Esencial02_c2 extends javax.swing.JFrame {
     private javax.swing.JButton btn_home;
     private javax.swing.JButton btn_primera;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lbl_galeria_c;
     private javax.swing.JLabel lbl_nombre_i;
     private javax.swing.JPanel pnl_base;
