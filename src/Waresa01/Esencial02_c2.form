@@ -203,7 +203,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="btn_adelante" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                          <Component id="btn_primera" min="-2" pref="71" max="-2" attributes="0"/>
+                          <Component id="btn_primera" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -240,7 +240,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btn_primera">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Inicio"/>
+                    <Property name="text" type="java.lang.String" value="Primera Imagen"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_primeraActionPerformed"/>
