@@ -1,21 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Waresa01;
+public class Esencial02_c1 extends javax.swing.JFrame 
+{
 
-/**
- *
- * @author sara
- */
-public class Esencial02_c1 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Principal01
-     */
-    public Esencial02_c1() {
+    public Esencial02_c1() 
+    {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -140,7 +130,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 .addContainerGap(101, Short.MAX_VALUE))
         );
 
-        lbl_nombre_c1.setText("Seleccione en cada aspecto");
+        lbl_nombre_c1.setText("Seleccione en cada aspecto:");
 
         lbl_nombre_c2.setText("1. Número de habitantes");
 
@@ -498,7 +488,15 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void cbx_personasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_personasActionPerformed
-        // TODO add your handling code here:
+        
+       // oper=cbx_personas.getSelectedItem().toString();
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_cbx_personasActionPerformed
 
     private void txf_temperaturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txf_temperaturaActionPerformed
