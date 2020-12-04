@@ -7,15 +7,14 @@ import java.net.URL;
 
 public class Sonidos {
 
-    private URL url;
-    private Clip clip;
+     URL url;
+     Clip clip;
+     AudioInputStream audioIn;
 
-    private AudioInputStream audioIn;
 
-
-    Sonidos(String relativePath){
+    Sonidos(String direccion){
         try {
-            url = this.getClass().getClassLoader().getResource(relativePath);
+            url = this.getClass().getClassLoader().getResource(direccion);
             audioIn = AudioSystem.getAudioInputStream(url);
             clip = AudioSystem.getClip();
             clip.open(audioIn);
@@ -23,19 +22,6 @@ public class Sonidos {
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
             e.printStackTrace();
         }
-    }
-
-
-    public void stop(){
-        if (clip!= null & clip.isRunning()){
-
-            clip.stop();
-            clip.close();
-        }
-    }
-
-    public  void start(){
-        clip.start();
     }
 
 }

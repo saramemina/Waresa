@@ -13,6 +13,7 @@ import javax.swing.*;
 public class Esencial02_c2 extends javax.swing.JFrame {
     int size = 11;
     ImageIcon[] images = new ImageIcon[size];
+    int position = 0;
     String[] textos = {
 
             "1. Ilustraremos mediante imágenes el proceso de construcción del humedal artificial.",
@@ -72,7 +73,6 @@ public class Esencial02_c2 extends javax.swing.JFrame {
             "11. Finalmente el agua sale tratada en un promedio de 5 días, el sistema se puede terminar agregando un tanque que almacene el recurso y de ser posible añadirle una bomba al mismo de manera tal que pueda ser utilizada fácilmente.\n" +
                     "El agua que resulta de este proceso está limpia más no es potable, es decir que no puede ser implementada en proceso de consumo. Es apropiada para regar el jardín, para lavar autos, fachadas e incluso la ropa."
     };
-    int position = 0;
 
     /**
      * Creates new form Principal01
@@ -85,7 +85,6 @@ public class Esencial02_c2 extends javax.swing.JFrame {
         initComponents();
 
         for (int k = 0; k < size; k++) {
-            System.out.println(k);
             images[k] = new ImageIcon(getClass().getResource("/WaresaRecursos/" + (k + 1) + ".png"));
         }
     }
