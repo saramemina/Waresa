@@ -132,7 +132,7 @@ public class Esencial02_c2 extends javax.swing.JFrame {
         txa_descripcion_i.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         txa_descripcion_i.setLineWrap(true);
         txa_descripcion_i.setRows(5);
-        txa_descripcion_i.setText("Mediante la construcción de este humedal artificial se busca tratar aguas residuales domésticas, con estas se presenta emisión de olores y una alta probabilidad de aparición de vectores por tal motivo, el tipo de humedal que mejor contrarresta este tipo de condiciones es el **Humedal Artificial Subsuperficial**, en este sistema el agua fluye debajo del material de soporte, por ende existe una disminución significativa de olores, también permite que no haya contacto directo entre la atmósfera y el agua, evitando la eclosión de mosquitos e insectos.");
+        txa_descripcion_i.setText("Mediante la construcción de este humedal artificial se busca tratar aguas residuales domésticas, con estas se presenta emisión de olores y una alta probabilidad de aparición de vectores por tal motivo, el tipo de humedal que mejor contrarresta este tipo de condiciones es el Humedal Artificial Subsuperficial, en este sistema el agua fluye debajo del material de soporte, por ende existe una disminución significativa de olores, también permite que no haya contacto directo entre la atmósfera y el agua, evitando la eclosión de mosquitos e insectos.");
         txa_descripcion_i.setWrapStyleWord(true);
         jScrollPane1.setViewportView(txa_descripcion_i);
 

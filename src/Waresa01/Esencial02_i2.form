@@ -75,39 +75,34 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="txa_descripcion_i" min="-2" pref="147" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <Component id="btn_home" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="72" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                              <Component id="btn_home" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txa_descripcion_i" min="-2" pref="147" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lbl_icono_i" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lbl_nombre_i" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="lbl_icono_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <EmptySpace pref="124" max="32767" attributes="0"/>
                       <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
-                      <Component id="txa_descripcion_i" min="-2" pref="284" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="txa_descripcion_i" min="-2" pref="168" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
                       <Component id="btn_home" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
@@ -115,14 +110,9 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lbl_icono_i">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="lbl_nombre_i">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel2"/>
+                <Property name="text" type="java.lang.String" value="Proclamaci&#xf3;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextArea" name="txa_descripcion_i">
@@ -135,7 +125,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="btn_home">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jButton1"/>
+                <Property name="text" type="java.lang.String" value="Inicio"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_homeActionPerformed"/>
@@ -148,10 +138,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="lbl_nombre_d1" min="-2" pref="153" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="57" max="32767" attributes="0"/>
-                      <Component id="lbl_nombre_d" min="-2" pref="153" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="556" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lbl_nombre_d" min="-2" pref="153" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="556" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txa_descripcion_d1" min="-2" pref="585" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                          <Component id="txa_descripcion_d" min="-2" pref="585" max="-2" attributes="0"/>
+                          <EmptySpace pref="91" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -161,6 +171,17 @@
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="lbl_nombre_d" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lbl_nombre_d1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txa_descripcion_d1" min="-2" pref="205" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Component id="txa_descripcion_d" min="-2" pref="205" max="-2" attributes="0"/>
+                          <EmptySpace pref="275" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -168,7 +189,32 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lbl_nombre_d">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel4"/>
+                <Property name="text" type="java.lang.String" value="Sobre nosotros"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextArea" name="txa_descripcion_d">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Waresa&#xa;&#xa;Mbaba Mwana Waresa  es una diosa de la fertilidad de los Zul&#xfa; del sur de &#xc1;frica.&#xa;Es la diosa del arco&#xed;ris, la agricultura, la cosecha, la lluvia y la cerveza. Ella le ense&#xf1;&#xf3; a su pueblo a sembrar, cosechar y el arte de hacer cerveza, es por este &#xfa;ltimo acto que se ha hecho una de las diosas m&#xe1;s veneradas del pueblo Zul&#xfa;; en nuestro caso, su relaci&#xf3;n con el agua y la agricultura es lo que nos motiva a hacer uso de este t&#xe9;rmino como identificador de este proyecto.&#xa;&#xa;Waresa es una herramienta que gu&#xed;a a sus usuarios en el dise&#xf1;o y construcci&#xf3;n de humedales artificiales tambi&#xe9;n denominados humedales construidos y espera que con ello pueda aportar al cumplimiento de 2 o m&#xe1;s objetivos espec&#xed;ficos enmarcados en los Objetivos de desarrollo sostenible."/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lbl_nombre_d1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Recomendaci&#xf3;n"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextArea" name="txa_descripcion_d1">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Debido a la naturaleza de la aplicaci&#xf3;n se recomienda que sea utilizada como parte de proyectos comunitarios en zonas rurales, que a trav&#xe9;s del uso de la misma sea posible la implementaci&#xf3;n de un conjunto de estrategias que beneficien a la comunidad y que en lo posible se implementen de la mano de una fundaci&#xf3;n o asociaci&#xf3;n que pueda proporcionar un direccionamiento adecuado en la utilizaci&#xf3;n e implementaci&#xf3;n del contenido de la misma.&#xa;&#xa;En esta secci&#xf3;n se encuentra un documento adjunto en el cuales se lista la informaci&#xf3;n de contacto de las corporaciones aut&#xf3;nomas regionales del territorio colombiano. Esta informaci&#xf3;n se proporciona con el &#xe1;nimo de que se puedan unir esfuerzos y conocimientos y que en caso de requerirlo, considerarlo viable y pertinente, sea posible realizar este proceso con el apoyo de alguna  de las corporaciones listadas, alguna ONG asociada a este, un miembro activo de la misma, l&#xed;der o lideresa con los cuales retroalimentar la ejecuci&#xf3;n e integraci&#xf3;n del proyecto."/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
           </SubComponents>

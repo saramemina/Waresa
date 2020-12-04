@@ -30,7 +30,6 @@ public class Esencial02_i1 extends javax.swing.JFrame {
 
         pnl_base = new javax.swing.JPanel();
         pnl_izquierdo = new javax.swing.JPanel();
-        lbl_icono_i = new javax.swing.JLabel();
         lbl_nombre_i = new javax.swing.JLabel();
         txa_descripcion_i = new javax.swing.JTextArea();
         btn_home = new javax.swing.JButton();
@@ -44,16 +43,16 @@ public class Esencial02_i1 extends javax.swing.JFrame {
 
         pnl_base.setBackground(new java.awt.Color(90, 176, 233));
 
-        lbl_icono_i.setText("jLabel1");
-
-        lbl_nombre_i.setText("jLabel2");
+        lbl_nombre_i.setText("Presentación");
 
         txa_descripcion_i.setEditable(false);
         txa_descripcion_i.setColumns(20);
+        txa_descripcion_i.setLineWrap(true);
         txa_descripcion_i.setRows(5);
-        txa_descripcion_i.setText("Hola mundo.");
+        txa_descripcion_i.setText("Algunas palabras por parte de nuestro equipo.");
+        txa_descripcion_i.setWrapStyleWord(true);
 
-        btn_home.setText("jButton1");
+        btn_home.setText("Inicio");
         btn_home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_homeActionPerformed(evt);
@@ -64,52 +63,54 @@ public class Esencial02_i1 extends javax.swing.JFrame {
         pnl_izquierdo.setLayout(pnl_izquierdoLayout);
         pnl_izquierdoLayout.setHorizontalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(lbl_nombre_i)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(btn_home))
-                    .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl_icono_i)
-                            .addComponent(lbl_nombre_i))))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
+                        .addComponent(btn_home)
+                        .addGap(56, 56, 56))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
+                        .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15))))
         );
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addComponent(lbl_icono_i)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addContainerGap(126, Short.MAX_VALUE)
                 .addComponent(lbl_nombre_i)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(28, 28, 28)
+                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
                 .addComponent(btn_home)
                 .addGap(16, 16, 16))
         );
 
-        lbl_nombre_d.setText("jLabel4");
+        lbl_nombre_d.setText("Proyecto Waresa");
 
         txa_descripcion_d.setEditable(false);
         txa_descripcion_d.setColumns(20);
+        txa_descripcion_d.setLineWrap(true);
         txa_descripcion_d.setRows(5);
+        txa_descripcion_d.setText("Seguramente en algún momento de nuestras vidas hemos sentido el temor que surge al querer iniciar algo nuevo, al querer realizar algo desconocido y extraño, nos han surgido dudas que nos hacen cuestionar la realización de este proceso; por suerte, la mayoría de las veces 'lo más difícil es dar el primer paso', tener presente cómo iniciar adecuadamente y así saber que esperar eliminado de nuestro imaginario expectativas que pueden diferir mucho de la realidad y del resultado final.\n\nA través de Waresa Project se busca brindar esa guía y acompañamiento a dar el primer paso en el proceso de diseño y construcción de humedales artificiales.\n\nLos humedales artificiales son un sistema no convencional a través de la cual es posible obtener un porcentaje de depuración para aguas residuales. Este tipo de sistemas son implementados alrededor del mundo aproximadamente desde 3 décadas anteriores a la actual.  Estos sistemas basan su funcionamiento en los humedales naturales, ecosistemas conocidos como \"los riñones del planeta\" gracias a su capacidad depuradora. \n\nLa depuración de aguas residuales es un aspecto fundamental en el conjunto de factores ambientales y sanitarios para una comunidad, la realización de este procedimiento mediante soluciones alternativas beneficia en gran medida a las poblaciones rurales y poblaciones con baja densidad poblacional en las cuales la cobertura del sistema de alcantarillado es deficiente. Así mismo es implementado por diversos usuarios a manera de complemento del servicio de alcantarillado, buscando con ello un valor agregado en las aguas residuales que estos generan. \n\nEsperamos que esta herramienta sea de utilidad para nuestros usuarios y que les proporcione el acompañamiento adecuado en ese primer paso hacia la construcción de humedales artificiales. Les deseamos éxitos en este proceso y el victorioso cumplimiento de los objetivos planteados.\n\n");
+        txa_descripcion_d.setWrapStyleWord(true);
 
         javax.swing.GroupLayout pnl_derechoLayout = new javax.swing.GroupLayout(pnl_derecho);
         pnl_derecho.setLayout(pnl_derechoLayout);
         pnl_derechoLayout.setHorizontalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+            .addGroup(pnl_derechoLayout.createSequentialGroup()
                 .addContainerGap(57, Short.MAX_VALUE)
                 .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_nombre_d, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 659, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+                        .addComponent(lbl_nombre_d, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(556, 556, 556))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+                        .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(81, 81, 81))))
         );
         pnl_derechoLayout.setVerticalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,7 +119,7 @@ public class Esencial02_i1 extends javax.swing.JFrame {
                 .addComponent(lbl_nombre_d)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnl_baseLayout = new javax.swing.GroupLayout(pnl_base);
@@ -260,7 +261,6 @@ public class Esencial02_i1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_home;
-    private javax.swing.JLabel lbl_icono_i;
     private javax.swing.JLabel lbl_nombre_d;
     private javax.swing.JLabel lbl_nombre_i;
     private javax.swing.JPanel pnl_base;

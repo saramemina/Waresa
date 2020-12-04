@@ -52,9 +52,9 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="98" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jPanelEsencial_c" min="-2" max="-2" attributes="0"/>
-                      <Component id="jPanelEsencial_i" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jPanelEsencial_c" max="32767" attributes="0"/>
+                      <Component id="jPanelEsencial_i" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
               </Group>
@@ -311,10 +311,10 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Component id="jLabel_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jPanel6" max="32767" attributes="0"/>
                           <Component id="jPanel4" max="32767" attributes="0"/>
-                          <Component id="jPanel6" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
@@ -423,7 +423,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="rbt_6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="246" max="32767" attributes="0"/>
+                          <EmptySpace pref="279" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -448,7 +448,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Recomendaci&#xf3;n"/>
+                    <Property name="text" type="java.lang.String" value="Proclamaci&#xf3;n"/>
                     <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <Events>

@@ -149,7 +149,7 @@
                     </Property>
                     <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Mediante la construcci&#xf3;n de este humedal artificial se busca tratar aguas residuales dom&#xe9;sticas, con estas se presenta emisi&#xf3;n de olores y una alta probabilidad de aparici&#xf3;n de vectores por tal motivo, el tipo de humedal que mejor contrarresta este tipo de condiciones es el **Humedal Artificial Subsuperficial**, en este sistema el agua fluye debajo del material de soporte, por ende existe una disminuci&#xf3;n significativa de olores, tambi&#xe9;n permite que no haya contacto directo entre la atm&#xf3;sfera y el agua, evitando la eclosi&#xf3;n de mosquitos e insectos."/>
+                    <Property name="text" type="java.lang.String" value="Mediante la construcci&#xf3;n de este humedal artificial se busca tratar aguas residuales dom&#xe9;sticas, con estas se presenta emisi&#xf3;n de olores y una alta probabilidad de aparici&#xf3;n de vectores por tal motivo, el tipo de humedal que mejor contrarresta este tipo de condiciones es el Humedal Artificial Subsuperficial, en este sistema el agua fluye debajo del material de soporte, por ende existe una disminuci&#xf3;n significativa de olores, tambi&#xe9;n permite que no haya contacto directo entre la atm&#xf3;sfera y el agua, evitando la eclosi&#xf3;n de mosquitos e insectos."/>
                     <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>

@@ -75,39 +75,34 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="txa_descripcion_i" min="-2" pref="147" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
                               <Component id="btn_home" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lbl_icono_i" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lbl_nombre_i" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txa_descripcion_i" min="-2" pref="148" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                      <Component id="lbl_icono_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <EmptySpace pref="126" max="32767" attributes="0"/>
                       <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
-                      <Component id="txa_descripcion_i" min="-2" pref="284" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="txa_descripcion_i" min="-2" pref="273" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="btn_home" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
@@ -115,27 +110,24 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lbl_icono_i">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel1"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="lbl_nombre_i">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel2"/>
+                <Property name="text" type="java.lang.String" value="Presentaci&#xf3;n"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextArea" name="txa_descripcion_i">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="Hola mundo."/>
+                <Property name="text" type="java.lang.String" value="Algunas palabras por parte de nuestro equipo."/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btn_home">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jButton1"/>
+                <Property name="text" type="java.lang.String" value="Inicio"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_homeActionPerformed"/>
@@ -148,13 +140,18 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace pref="57" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lbl_nombre_d" min="-2" pref="153" max="-2" attributes="0"/>
-                          <Component id="txa_descripcion_d" min="-2" pref="659" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lbl_nombre_d" min="-2" pref="153" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="556" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="txa_descripcion_d" min="-2" pref="585" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -165,7 +162,7 @@
                       <Component id="lbl_nombre_d" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="txa_descripcion_d" min="-2" pref="431" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="44" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -173,14 +170,17 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lbl_nombre_d">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel4"/>
+                <Property name="text" type="java.lang.String" value="Proyecto Waresa"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextArea" name="txa_descripcion_d">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Seguramente en alg&#xfa;n momento de nuestras vidas hemos sentido el temor que surge al querer iniciar algo nuevo, al querer realizar algo desconocido y extra&#xf1;o, nos han surgido dudas que nos hacen cuestionar la realizaci&#xf3;n de este proceso; por suerte, la mayor&#xed;a de las veces &apos;lo m&#xe1;s dif&#xed;cil es dar el primer paso&apos;, tener presente c&#xf3;mo iniciar adecuadamente y as&#xed; saber que esperar eliminado de nuestro imaginario expectativas que pueden diferir mucho de la realidad y del resultado final.&#xa;&#xa;A trav&#xe9;s de Waresa Project se busca brindar esa gu&#xed;a y acompa&#xf1;amiento a dar el primer paso en el proceso de dise&#xf1;o y construcci&#xf3;n de humedales artificiales.&#xa;&#xa;Los humedales artificiales son un sistema no convencional a trav&#xe9;s de la cual es posible obtener un porcentaje de depuraci&#xf3;n para aguas residuales. Este tipo de sistemas son implementados alrededor del mundo aproximadamente desde 3 d&#xe9;cadas anteriores a la actual.  Estos sistemas basan su funcionamiento en los humedales naturales, ecosistemas conocidos como &quot;los ri&#xf1;ones del planeta&quot; gracias a su capacidad depuradora. &#xa;&#xa;La depuraci&#xf3;n de aguas residuales es un aspecto fundamental en el conjunto de factores ambientales y sanitarios para una comunidad, la realizaci&#xf3;n de este procedimiento mediante soluciones alternativas beneficia en gran medida a las poblaciones rurales y poblaciones con baja densidad poblacional en las cuales la cobertura del sistema de alcantarillado es deficiente. As&#xed; mismo es implementado por diversos usuarios a manera de complemento del servicio de alcantarillado, buscando con ello un valor agregado en las aguas residuales que estos generan. &#xa;&#xa;Esperamos que esta herramienta sea de utilidad para nuestros usuarios y que les proporcione el acompa&#xf1;amiento adecuado en ese primer paso hacia la construcci&#xf3;n de humedales artificiales. Les deseamos &#xe9;xitos en este proceso y el victorioso cumplimiento de los objetivos planteados.&#xa;&#xa;"/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
           </SubComponents>
