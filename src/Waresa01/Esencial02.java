@@ -5,6 +5,8 @@
  */
 package Waresa01;
 
+import javax.swing.*;
+
 /**
  *
  * @author sara
@@ -15,6 +17,8 @@ public class Esencial02 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02() {
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
     }
 
@@ -302,23 +306,28 @@ public class Esencial02 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rbt_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_1ActionPerformed
-        // TODO add your handling code here:
+        Esencial02_c1 c1 = new Esencial02_c1();
+        this.dispose();
     }//GEN-LAST:event_rbt_1ActionPerformed
 
     private void rbt_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_2ActionPerformed
-        // TODO add your handling code here:
+        Esencial02_c2 c2 = new Esencial02_c2();
+        this.dispose();
     }//GEN-LAST:event_rbt_2ActionPerformed
 
     private void rbt_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_3ActionPerformed
-        // TODO add your handling code here:
+        Esencial02_c3 c3 = new Esencial02_c3();
+        this.dispose();
     }//GEN-LAST:event_rbt_3ActionPerformed
 
     private void rbt_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_4ActionPerformed
-        // TODO add your handling code here:
+        Esencial02_i1 i1 = new Esencial02_i1();
+        this.dispose();
     }//GEN-LAST:event_rbt_4ActionPerformed
 
     private void rbt_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_6ActionPerformed
-        // TODO add your handling code here:
+        Esencial02_i2 i2 = new Esencial02_i2();
+        this.dispose();
     }//GEN-LAST:event_rbt_6ActionPerformed
 
     /**

@@ -366,27 +366,36 @@
                   <SubComponents>
                     <Component class="javax.swing.JLabel" name="lbl_imagen_c1">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/WaresaRecursos/Canaceae.jpeg"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="1"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbl_imagen_c2">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/WaresaRecursos/Canaceae.jpeg"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="1"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbl_imagen_c3">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/WaresaRecursos/Canaceae.jpeg"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="1"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c1">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Poaceae"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c2">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Neotropical Typhaceae"/>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c2ActionPerformed"/>
@@ -394,7 +403,7 @@
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Cyperus papyrus"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -467,12 +476,12 @@
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c4">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Araceae"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c5">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Canaceae"/>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbx_imagen_c5ActionPerformed"/>
@@ -480,7 +489,7 @@
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="cbx_imagen_c6">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+                        <Property name="text" type="java.lang.String" value="Cyperaceae"/>
                       </Properties>
                     </Component>
                   </SubComponents>

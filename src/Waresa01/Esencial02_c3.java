@@ -15,6 +15,7 @@ public class Esencial02_c3 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_c3() {
+        setVisible(true);
         initComponents();
     }
 

@@ -5,6 +5,8 @@
  */
 package Waresa01;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author sara
@@ -15,6 +17,7 @@ public class Esencial01 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial01() {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
     }
 
@@ -87,7 +90,9 @@ public class Esencial01 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_EmpezarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_EmpezarActionPerformed
-        // TODO add your handling code here:
+       Esencial02 es2 = new Esencial02();
+       this.dispose();
+       
     }//GEN-LAST:event_btn_EmpezarActionPerformed
 
     /**

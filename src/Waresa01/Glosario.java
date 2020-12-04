@@ -15,6 +15,7 @@ public class Glosario extends javax.swing.JFrame {
      * Creates new form Glosario
      */
     public Glosario() {
+        setVisible(true);
         initComponents();
     }
 

@@ -5,17 +5,38 @@
  */
 package Waresa01;
 
+import java.awt.Image;
+import javax.swing.*;
+
 /**
  *
  * @author sara
  */
 public class Esencial02_c1 extends javax.swing.JFrame {
+    ImageIcon foto1, foto2, foto3, foto4, foto5, foto6;
 
     /**
      * Creates new form Principal01
      */
     public Esencial02_c1() {
+        setVisible(true);
         initComponents();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        foto1=new ImageIcon(getClass().getResource("/WaresaRecursos/Poaceae.jpg"));
+        lbl_imagen_c1.setIcon(new ImageIcon(foto1.getImage().getScaledInstance(lbl_imagen_c1.getWidth(),lbl_imagen_c1.getHeight(),Image.SCALE_DEFAULT)));
+        foto2=new ImageIcon(getClass().getResource("/WaresaRecursos/Neotropical Typhaceae.jpeg"));
+        lbl_imagen_c2.setIcon(new ImageIcon(foto2.getImage().getScaledInstance(lbl_imagen_c2.getWidth(),lbl_imagen_c2.getHeight(),Image.SCALE_DEFAULT)));
+        foto3=new ImageIcon(getClass().getResource("/WaresaRecursos/Cyperus papyrus.jpeg"));
+        lbl_imagen_c3.setIcon(new ImageIcon(foto3.getImage().getScaledInstance(lbl_imagen_c3.getWidth(),lbl_imagen_c3.getHeight(),Image.SCALE_DEFAULT)));
+
+
+        foto4=new ImageIcon(getClass().getResource("/WaresaRecursos/Araceae.jpeg"));
+        lbl_imagen_c4.setIcon(new ImageIcon(foto4.getImage().getScaledInstance(lbl_imagen_c4.getWidth(),lbl_imagen_c4.getHeight(),Image.SCALE_DEFAULT)));
+        foto5=new ImageIcon(getClass().getResource("/WaresaRecursos/Canaceae.jpeg"));
+        lbl_imagen_c5.setIcon(new ImageIcon(foto5.getImage().getScaledInstance(lbl_imagen_c5.getWidth(),lbl_imagen_c5.getHeight(),Image.SCALE_DEFAULT)));
+        foto6=new ImageIcon(getClass().getResource("/WaresaRecursos/Cyperaceae.jpg"));
+        lbl_imagen_c6.setIcon(new ImageIcon(foto6.getImage().getScaledInstance(lbl_imagen_c6.getWidth(),lbl_imagen_c6.getHeight(),Image.SCALE_DEFAULT)));
+
     }
 
     /**
@@ -162,22 +183,25 @@ public class Esencial02_c1 extends javax.swing.JFrame {
             }
         });
 
+        lbl_imagen_c1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WaresaRecursos/Canaceae.jpeg"))); // NOI18N
         lbl_imagen_c1.setText("1");
 
+        lbl_imagen_c2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WaresaRecursos/Canaceae.jpeg"))); // NOI18N
         lbl_imagen_c2.setText("1");
 
+        lbl_imagen_c3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/WaresaRecursos/Canaceae.jpeg"))); // NOI18N
         lbl_imagen_c3.setText("1");
 
-        cbx_imagen_c1.setText("jCheckBox1");
+        cbx_imagen_c1.setText("Poaceae");
 
-        cbx_imagen_c2.setText("jCheckBox1");
+        cbx_imagen_c2.setText("Neotropical Typhaceae");
         cbx_imagen_c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbx_imagen_c2ActionPerformed(evt);
             }
         });
 
-        cbx_imagen_c3.setText("jCheckBox1");
+        cbx_imagen_c3.setText("Cyperus papyrus");
 
         javax.swing.GroupLayout pnl_imagenes1Layout = new javax.swing.GroupLayout(pnl_imagenes1);
         pnl_imagenes1.setLayout(pnl_imagenes1Layout);
@@ -223,16 +247,16 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
         lbl_imagen_c6.setText("1");
 
-        cbx_imagen_c4.setText("jCheckBox1");
+        cbx_imagen_c4.setText("Araceae");
 
-        cbx_imagen_c5.setText("jCheckBox1");
+        cbx_imagen_c5.setText("Canaceae");
         cbx_imagen_c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbx_imagen_c5ActionPerformed(evt);
             }
         });
 
-        cbx_imagen_c6.setText("jCheckBox1");
+        cbx_imagen_c6.setText("Cyperaceae");
 
         javax.swing.GroupLayout pnl_imagenes2Layout = new javax.swing.GroupLayout(pnl_imagenes2);
         pnl_imagenes2.setLayout(pnl_imagenes2Layout);
@@ -494,7 +518,8 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
+        Esencial01 e1 = new Esencial01();
+        dispose();
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void cbx_personasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_personasActionPerformed
@@ -729,7 +754,6 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbn_material_2;
     private javax.swing.JRadioButton rbn_material_3;
     private javax.swing.JScrollPane scr_centro;
-    private javax.swing.JTextField tf_num;
     private javax.swing.JTextArea txa_descripcion_i;
     private javax.swing.JTextField txf_temperatura;
     // End of variables declaration//GEN-END:variables

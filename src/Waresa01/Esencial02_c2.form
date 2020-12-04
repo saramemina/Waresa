@@ -138,7 +138,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="btn_home">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jButton1"/>
+                <Property name="text" type="java.lang.String" value="Inicio"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_homeActionPerformed"/>
@@ -211,7 +211,7 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="btn_adelante">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="jButton2"/>
+                    <Property name="text" type="java.lang.String" value="Anterior"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btn_atras">
@@ -221,7 +221,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="btn_primera">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="jButton4"/>
+                    <Property name="text" type="java.lang.String" value="Siguiente"/>
                   </Properties>
                 </Component>
               </SubComponents>

@@ -15,6 +15,7 @@ public class Esencial02_c2 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_c2() {
+        setVisible(true);
         initComponents();
     }
 
@@ -58,7 +59,7 @@ public class Esencial02_c2 extends javax.swing.JFrame {
         txa_descripcion_i.setRows(5);
         txa_descripcion_i.setText("Hola mundo.");
 
-        btn_home.setText("jButton1");
+        btn_home.setText("Inicio");
         btn_home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_homeActionPerformed(evt);
@@ -101,11 +102,11 @@ public class Esencial02_c2 extends javax.swing.JFrame {
 
         lbl_galeria_c.setText("jLabel5");
 
-        btn_adelante.setText("jButton2");
+        btn_adelante.setText("Anterior");
 
         btn_atras.setText("jButton3");
 
-        btn_primera.setText("jButton4");
+        btn_primera.setText("Siguiente");
 
         javax.swing.GroupLayout pnl_inferiorLayout = new javax.swing.GroupLayout(pnl_inferior);
         pnl_inferior.setLayout(pnl_inferiorLayout);
@@ -219,7 +220,8 @@ public class Esencial02_c2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
+           Esencial01 e1 = new Esencial01();
+        dispose();
     }//GEN-LAST:event_btn_homeActionPerformed
 
     /**
