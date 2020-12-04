@@ -5,6 +5,8 @@
  */
 package Waresa01;
 
+import javax.swing.*;
+
 /**
  *
  * @author sara
@@ -15,7 +17,9 @@ public class Esencial02_i1 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_i1() {
-        setVisible(true);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
     }
 

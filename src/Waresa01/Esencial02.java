@@ -17,9 +17,11 @@ public class Esencial02 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02() {
-        setVisible(true);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
+        Sonidos sonido = new Sonidos("WaresaRecursos/waterfall.wav");
     }
 
     /**
