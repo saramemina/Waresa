@@ -53,8 +53,10 @@ public class Esencial02_i2 extends javax.swing.JFrame {
 
         txa_descripcion_i.setEditable(false);
         txa_descripcion_i.setColumns(20);
+        txa_descripcion_i.setLineWrap(true);
         txa_descripcion_i.setRows(5);
-        txa_descripcion_i.setText("Hola mundo.");
+        txa_descripcion_i.setText("Encuentra adjunto el documento al cual hacemos referencia en el texto. ");
+        txa_descripcion_i.setWrapStyleWord(true);
 
         btn_home.setText("Inicio");
         btn_home.addActionListener(new java.awt.event.ActionListener() {
