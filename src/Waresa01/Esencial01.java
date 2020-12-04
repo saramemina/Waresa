@@ -18,6 +18,7 @@ public class Esencial01 extends javax.swing.JFrame {
      */
     public Esencial01() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
         initComponents();
     }
 
