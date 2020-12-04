@@ -29,7 +29,7 @@ public class Esencial02_i2 extends javax.swing.JFrame {
 
         try {
             Desktop leer = Desktop.getDesktop();
-            leer.open(new File("WaresaRecursos/Corporaciones_Autnomas_Regionales_Nacionales.pdf"));
+            leer.open(new File("src/WaresaRecursos/Corporaciones_Autnomas_Regionales_Nacionales.pdf"));
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this,"No se pudo leer el archvo pdf :(");
         }
@@ -88,34 +88,35 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         pnl_izquierdo.setLayout(pnl_izquierdoLayout);
         pnl_izquierdoLayout.setHorizontalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(lbl_nombre_i)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 114, Short.MAX_VALUE)
+                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(112, 112, 112))
+            .addGroup(pnl_izquierdoLayout.createSequentialGroup()
                 .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                        .addComponent(lbl_nombre_i)
-                        .addGap(45, 45, 45))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                        .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btn_leer, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18))))
+                    .addGroup(pnl_izquierdoLayout.createSequentialGroup()
+                        .addGap(188, 188, 188)
+                        .addComponent(lbl_nombre_i))
+                    .addGroup(pnl_izquierdoLayout.createSequentialGroup()
+                        .addGap(128, 128, 128)
+                        .addComponent(btn_leer))
+                    .addGroup(pnl_izquierdoLayout.createSequentialGroup()
+                        .addGap(166, 166, 166)
+                        .addComponent(btn_home)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(35, 35, 35)
                 .addComponent(lbl_nombre_i)
-                .addGap(46, 46, 46)
-                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43)
+                .addGap(37, 37, 37)
+                .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(139, 139, 139)
                 .addComponent(btn_leer)
-                .addGap(54, 54, 54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_home)
-                .addGap(16, 16, 16))
+                .addGap(21, 21, 21))
         );
 
         lbl_nombre_d.setText("Sobre nosotros");
@@ -140,40 +141,31 @@ public class Esencial02_i2 extends javax.swing.JFrame {
         pnl_derecho.setLayout(pnl_derechoLayout);
         pnl_derechoLayout.setHorizontalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_derechoLayout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(lbl_nombre_d1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
+                .addContainerGap(120, Short.MAX_VALUE)
                 .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                        .addComponent(lbl_nombre_d, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(556, 556, 556))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
-                        .addComponent(txa_descripcion_d1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(89, 89, 89))))
-            .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnl_derechoLayout.createSequentialGroup()
-                    .addGap(90, 90, 90)
+                    .addComponent(lbl_nombre_d1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(91, Short.MAX_VALUE)))
+                    .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+                            .addComponent(lbl_nombre_d, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(556, 556, 556))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+                            .addComponent(txa_descripcion_d1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(119, 119, 119)))))
         );
         pnl_derechoLayout.setVerticalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_derechoLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(lbl_nombre_d)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_nombre_d1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txa_descripcion_d1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
-            .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pnl_derechoLayout.createSequentialGroup()
-                    .addGap(48, 48, 48)
-                    .addComponent(txa_descripcion_d, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(275, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout pnl_baseLayout = new javax.swing.GroupLayout(pnl_base);
@@ -212,18 +204,13 @@ public class Esencial02_i2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
+      Esencial02 es2 = new Esencial02();
+      this.dispose();
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void btn_leerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_leerActionPerformed
         openpdf();
-
-
-
-
-
-
-
+        
     }//GEN-LAST:event_btn_leerActionPerformed
 
     /**
