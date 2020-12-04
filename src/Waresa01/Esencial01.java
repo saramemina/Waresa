@@ -17,6 +17,8 @@ public class Esencial01 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial01() {
+        this.setTitle("Bienvenidos a Waresa");
+        this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
         initComponents();
@@ -36,6 +38,7 @@ public class Esencial01 extends javax.swing.JFrame {
         btn_Empezar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setSize(new java.awt.Dimension(974, 546));
 
         pnl_base.setBackground(new java.awt.Color(90, 176, 233));

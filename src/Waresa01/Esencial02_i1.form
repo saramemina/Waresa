@@ -75,12 +75,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                      <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
@@ -93,14 +88,19 @@
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="126" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       <Component id="lbl_nombre_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="txa_descripcion_i" min="-2" pref="273" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Component id="btn_home" min="-2" max="-2" attributes="0"/>
@@ -112,6 +112,9 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lbl_nombre_i">
               <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="18" style="1"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Presentaci&#xf3;n"/>
               </Properties>
             </Component>
@@ -177,6 +180,9 @@
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="12" style="0"/>
+                </Property>
                 <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="Seguramente en alg&#xfa;n momento de nuestras vidas hemos sentido el temor que surge al querer iniciar algo nuevo, al querer realizar algo desconocido y extra&#xf1;o, nos han surgido dudas que nos hacen cuestionar la realizaci&#xf3;n de este proceso; por suerte, la mayor&#xed;a de las veces &apos;lo m&#xe1;s dif&#xed;cil es dar el primer paso&apos;, tener presente c&#xf3;mo iniciar adecuadamente y as&#xed; saber que esperar eliminado de nuestro imaginario expectativas que pueden diferir mucho de la realidad y del resultado final.&#xa;&#xa;A trav&#xe9;s de Waresa Project se busca brindar esa gu&#xed;a y acompa&#xf1;amiento a dar el primer paso en el proceso de dise&#xf1;o y construcci&#xf3;n de humedales artificiales.&#xa;&#xa;Los humedales artificiales son un sistema no convencional a trav&#xe9;s de la cual es posible obtener un porcentaje de depuraci&#xf3;n para aguas residuales. Este tipo de sistemas son implementados alrededor del mundo aproximadamente desde 3 d&#xe9;cadas anteriores a la actual.  Estos sistemas basan su funcionamiento en los humedales naturales, ecosistemas conocidos como &quot;los ri&#xf1;ones del planeta&quot; gracias a su capacidad depuradora. &#xa;&#xa;La depuraci&#xf3;n de aguas residuales es un aspecto fundamental en el conjunto de factores ambientales y sanitarios para una comunidad, la realizaci&#xf3;n de este procedimiento mediante soluciones alternativas beneficia en gran medida a las poblaciones rurales y poblaciones con baja densidad poblacional en las cuales la cobertura del sistema de alcantarillado es deficiente. As&#xed; mismo es implementado por diversos usuarios a manera de complemento del servicio de alcantarillado, buscando con ello un valor agregado en las aguas residuales que estos generan. &#xa;&#xa;Esperamos que esta herramienta sea de utilidad para nuestros usuarios y que les proporcione el acompa&#xf1;amiento adecuado en ese primer paso hacia la construcci&#xf3;n de humedales artificiales. Les deseamos &#xe9;xitos en este proceso y el victorioso cumplimiento de los objetivos planteados.&#xa;&#xa;"/>

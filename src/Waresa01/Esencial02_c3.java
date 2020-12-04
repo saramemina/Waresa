@@ -17,9 +17,10 @@ public class Esencial02_c3 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_c3() {
+        this.setTitle("Consejos y Cuidados");
         this.setLocationRelativeTo(null);
-        this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
         initComponents();
     }
 

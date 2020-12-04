@@ -17,9 +17,10 @@ public class Esencial02_i1 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_i1() {
+        this.setTitle("Presentación");
         this.setLocationRelativeTo(null);
-        this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
         initComponents();
     }
 
@@ -47,6 +48,7 @@ public class Esencial02_i1 extends javax.swing.JFrame {
 
         pnl_base.setBackground(new java.awt.Color(90, 176, 233));
 
+        lbl_nombre_i.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_nombre_i.setText("Presentación");
 
         txa_descripcion_i.setEditable(false);
@@ -68,10 +70,6 @@ public class Esencial02_i1 extends javax.swing.JFrame {
         pnl_izquierdoLayout.setHorizontalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(lbl_nombre_i)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addGroup(pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
@@ -80,13 +78,17 @@ public class Esencial02_i1 extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
                         .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15))))
+            .addGroup(pnl_izquierdoLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(lbl_nombre_i)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap(126, Short.MAX_VALUE)
+                .addGap(53, 53, 53)
                 .addComponent(lbl_nombre_i)
-                .addGap(28, 28, 28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addComponent(btn_home)
@@ -97,6 +99,7 @@ public class Esencial02_i1 extends javax.swing.JFrame {
 
         txa_descripcion_d.setEditable(false);
         txa_descripcion_d.setColumns(20);
+        txa_descripcion_d.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         txa_descripcion_d.setLineWrap(true);
         txa_descripcion_d.setRows(5);
         txa_descripcion_d.setText("Seguramente en algún momento de nuestras vidas hemos sentido el temor que surge al querer iniciar algo nuevo, al querer realizar algo desconocido y extraño, nos han surgido dudas que nos hacen cuestionar la realización de este proceso; por suerte, la mayoría de las veces 'lo más difícil es dar el primer paso', tener presente cómo iniciar adecuadamente y así saber que esperar eliminado de nuestro imaginario expectativas que pueden diferir mucho de la realidad y del resultado final.\n\nA través de Waresa Project se busca brindar esa guía y acompañamiento a dar el primer paso en el proceso de diseño y construcción de humedales artificiales.\n\nLos humedales artificiales son un sistema no convencional a través de la cual es posible obtener un porcentaje de depuración para aguas residuales. Este tipo de sistemas son implementados alrededor del mundo aproximadamente desde 3 décadas anteriores a la actual.  Estos sistemas basan su funcionamiento en los humedales naturales, ecosistemas conocidos como \"los riñones del planeta\" gracias a su capacidad depuradora. \n\nLa depuración de aguas residuales es un aspecto fundamental en el conjunto de factores ambientales y sanitarios para una comunidad, la realización de este procedimiento mediante soluciones alternativas beneficia en gran medida a las poblaciones rurales y poblaciones con baja densidad poblacional en las cuales la cobertura del sistema de alcantarillado es deficiente. Así mismo es implementado por diversos usuarios a manera de complemento del servicio de alcantarillado, buscando con ello un valor agregado en las aguas residuales que estos generan. \n\nEsperamos que esta herramienta sea de utilidad para nuestros usuarios y que les proporcione el acompañamiento adecuado en ese primer paso hacia la construcción de humedales artificiales. Les deseamos éxitos en este proceso y el victorioso cumplimiento de los objetivos planteados.\n\n");
@@ -162,7 +165,8 @@ public class Esencial02_i1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
+        Esencial02 es2 = new Esencial02();
+        this.dispose();
     }//GEN-LAST:event_btn_homeActionPerformed
 
     /**

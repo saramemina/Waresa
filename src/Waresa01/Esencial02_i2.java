@@ -19,9 +19,10 @@ public class Esencial02_i2 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_i2() {
+        this.setTitle("Proclamación");
         this.setLocationRelativeTo(null);
-        this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
         initComponents();
     }
 

@@ -1,6 +1,7 @@
 package Waresa01;
 
 import java.awt.Image;
+import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import javax.swing.*;
 
@@ -20,6 +21,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_c1() {
+        this.setTitle("Componentes del diseño");
         setVisible(true);
         initComponents();
         this.setLocationRelativeTo(null);
@@ -83,7 +85,6 @@ public class Esencial02_c1 extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         pnl_base = new javax.swing.JPanel();
         pnl_izquierdo = new javax.swing.JPanel();
-        lbl_icono_i = new javax.swing.JLabel();
         lbl_nombre_i1 = new javax.swing.JLabel();
         lbl_nombre_i2 = new javax.swing.JLabel();
         txa_descripcion_i = new javax.swing.JTextArea();
@@ -137,8 +138,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
         pnl_base.setBackground(new java.awt.Color(90, 176, 233));
 
-        lbl_icono_i.setText("jLabel1");
-
+        lbl_nombre_i1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lbl_nombre_i1.setText("1. Componentes");
 
         lbl_nombre_i2.setText("del diseño");
@@ -175,25 +175,19 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_home)
                 .addGap(57, 57, 57))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_izquierdoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lbl_icono_i)
-                .addGap(63, 63, 63))
         );
         pnl_izquierdoLayout.setVerticalGroup(
             pnl_izquierdoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_izquierdoLayout.createSequentialGroup()
                 .addGap(89, 89, 89)
-                .addComponent(lbl_icono_i)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addComponent(lbl_nombre_i1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addComponent(lbl_nombre_i2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(txa_descripcion_i, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
                 .addComponent(btn_home)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
 
         lbl_nombre_c1.setText("Seleccione en cada aspecto:");
@@ -380,6 +374,11 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 txf_temperaturaActionPerformed(evt);
             }
         });
+        txf_temperatura.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txf_temperaturaKeyPressed(evt);
+            }
+        });
 
         btn_calcular.setText("Calcular");
         btn_calcular.addActionListener(new java.awt.event.ActionListener() {
@@ -466,6 +465,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
 
         scr_centro.setViewportView(pnl_centro);
 
+        lbl_nombre_d.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lbl_nombre_d.setText("Resumen  de resultados");
 
         lbl_nombre_d1.setText("Caudal (m3/d)");
@@ -512,24 +512,29 @@ public class Esencial02_c1 extends javax.swing.JFrame {
             .addGroup(pnl_derechoLayout.createSequentialGroup()
                 .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnl_derechoLayout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(lbl_nombre_d1))
-                    .addGroup(pnl_derechoLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbl_nombre_d, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbl_resultadoCaudal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbl_resultadoProfundidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbl_resultadoAreaSuperf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbl_resultadoAncho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbl_resultadoLargo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(pnl_derechoLayout.createSequentialGroup()
-                        .addGap(67, 67, 67)
-                        .addComponent(lbl_nombre_d2))
-                    .addGroup(pnl_derechoLayout.createSequentialGroup()
-                        .addGap(98, 98, 98)
-                        .addComponent(jButton2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                                .addGap(61, 61, 61)
+                                .addComponent(lbl_nombre_d1))
+                            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addGroup(pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lbl_resultadoCaudal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbl_resultadoProfundidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbl_resultadoAreaSuperf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbl_resultadoAncho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lbl_resultadoLargo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                                .addGap(67, 67, 67)
+                                .addComponent(lbl_nombre_d2))
+                            .addGroup(pnl_derechoLayout.createSequentialGroup()
+                                .addGap(98, 98, 98)
+                                .addComponent(jButton2)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_derechoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lbl_nombre_d, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         pnl_derechoLayout.setVerticalGroup(
             pnl_derechoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -689,7 +694,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Por favor ingrese un valor de temperatura valido");
             }
 
-            if (temperatura >= 10 ){
+            if (temperatura >= 10 && temperatura <= 28){
                 double velocidadkt = 0.678 * (Math.pow(1.06, (temperatura - 20)));
                 areasup = (caudal * Math.log(10)) / (velocidadkt * profundidadMayor * porosidad);
                 lbl_resultadoAreaSuperf.setText(decimalFormat.format(areasup));
@@ -703,7 +708,7 @@ public class Esencial02_c1 extends javax.swing.JFrame {
                 lbl_resultadoLargo.setText(decimalFormat.format(largo));
             }
             else{
-                JOptionPane.showMessageDialog(this, "El valor de la temperatura debe se mayo o igual a 10°");
+                JOptionPane.showMessageDialog(this, "El valor de la temperatura debe estar entre 10° y 28°");
             }
 
 
@@ -715,10 +720,35 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_calcularActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Esencial02_c1 esc1 = new Esencial02_c1();
-        this.dispose();
+        porosidad = 0;
+        temperatura = 0;
+        areasup = 0;
+        areatran= 0;
+        largo = 0;
+        lbl_resultadoLargo.setText("");
+        lbl_resultadoAncho.setText("");
+        lbl_resultadoAreaSuperf.setText("");
+        lbl_resultadoCaudal.setText("0.2");
+        profundidadMayor = 0;
+        buttonGroup1.clearSelection();
+        cbx_personas.setSelectedIndex(0);
+        cbx_imagen_c1.setSelected(false);
+        cbx_imagen_c2.setSelected(false);
+        cbx_imagen_c3.setSelected(false);
+        cbx_imagen_c4.setSelected(false);
+        cbx_imagen_c5.setSelected(false);
+        cbx_imagen_c6.setSelected(false);
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txf_temperaturaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txf_temperaturaKeyPressed
+       char te_pre=evt.getKeyChar();
+      if (te_pre==KeyEvent.VK_ENTER){
+     btn_calcular.doClick();
+
+ }
+    }//GEN-LAST:event_txf_temperaturaKeyPressed
 
     /**
      * @param args the command line arguments
@@ -894,7 +924,6 @@ public class Esencial02_c1 extends javax.swing.JFrame {
     private javax.swing.JCheckBox cbx_imagen_c6;
     private javax.swing.JComboBox<String> cbx_personas;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel lbl_icono_i;
     private javax.swing.JLabel lbl_imagen_c1;
     private javax.swing.JLabel lbl_imagen_c2;
     private javax.swing.JLabel lbl_imagen_c3;

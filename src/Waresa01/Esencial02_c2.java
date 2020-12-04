@@ -78,6 +78,9 @@ public class Esencial02_c2 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02_c2() {
+        this.setTitle("Procesos de construcción");
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         initComponents();
 

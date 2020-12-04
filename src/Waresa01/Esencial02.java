@@ -17,6 +17,7 @@ public class Esencial02 extends javax.swing.JFrame {
      * Creates new form Principal01
      */
     public Esencial02() {
+        this.setTitle("Menú Principal");
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -51,6 +52,7 @@ public class Esencial02 extends javax.swing.JFrame {
         rbt_6 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setSize(new java.awt.Dimension(974, 546));
 
         pnl_base.setBackground(new java.awt.Color(90, 176, 233));
